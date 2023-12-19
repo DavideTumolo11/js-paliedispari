@@ -38,8 +38,46 @@ if (isPalindrome(userWord)) {
 
 // pari e dispari
 
+const evenOdd = prompt("Scegli 'pari' o 'dispari' ");
+const chooseNumber = Number(prompt('Scegli un numero da 1 a 5'));
 
-const chooseNumber = prompt('Scegli un numero da 1 a 5');
+const pcNumberFunction = pcNumber();
+console.log(pcNumberFunction);
+
+function pcNumber() {
+    const number = Math.floor(Math.random() * 5) + 1;
+    return number;
+}
+
+const somma = sum();
+console.log(somma);
+
+function sum(){
+    const somma = Number(pcNumberFunction) + (chooseNumber);
+    return somma;
+}
+
+const result = isEvenOrOdd(somma);
+console.log(result);
+
+
+if (result === evenOdd){
+    console.log('hai vinto');
+
+}else if (result != evenOdd) {
+    console.log('hai perso');
+}
+
+function isEvenOrOdd(sum) {
+    if (somma % 2 == 0) {
+        return pari = "Il numero è pari";
+    } else {
+        return dispari = "Il numero è dispari";
+    }
+}
+
+
+
 
 
 
