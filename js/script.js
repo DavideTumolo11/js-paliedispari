@@ -64,15 +64,15 @@ console.log(result);
 if (result === evenOdd){
     console.log('hai vinto');
 
-}else if (result != evenOdd) {
+}else {
     console.log('hai perso');
 }
 
 function isEvenOrOdd(sum) {
-    if (somma % 2 == 0) {
-        return pari = "Il numero è pari";
+    if (sum % 2 == 0) {
+        return "pari";
     } else {
-        return dispari = "Il numero è dispari";
+        return "dispari";
     }
 }
 
